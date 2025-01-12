@@ -31,6 +31,7 @@ document.getElementById('dataForm').onsubmit = function(event) {
     event.preventDefault();
     const formData = {
         name: document.getElementById('name').value,
+        date: document.getElementById('date').value,
         total_target: document.getElementById('total_target').value,
         target_completed: document.getElementById('target_completed').value,
         percentage: document.getElementById('percentage').value,
