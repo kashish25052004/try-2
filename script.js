@@ -31,7 +31,7 @@ document.getElementById('dataForm').onsubmit = function(event) {
     event.preventDefault();
     const formData = {
         name: document.getElementById('name').value,
-        date: document.getElementById('date').value,
+        date:document.getElementById('date').value,
         total_target: document.getElementById('total_target').value,
         target_completed: document.getElementById('target_completed').value,
         percentage: document.getElementById('percentage').value,
@@ -39,7 +39,7 @@ document.getElementById('dataForm').onsubmit = function(event) {
 
     };
 
-    fetch('https://script.google.com/macros/s/AKfycbyQwfJ345WbTokY-HBpad535H_WH1H9c_ChpoHHKqIDZz6VoQLRu3lhuGBbRuU3vhg/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbyZa52EnIo8fca4unIlMDL6HKb7cZPttfv0d24r7zHH-wmxMN-PJZJyJO292uke-Vk/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: {
