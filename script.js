@@ -19,6 +19,15 @@ function calculatePercentage() {
 
 
 document.getElementById('dataForm').onsubmit = function(event) {
+    const totalTarget = parseInt(document.getElementById('total_target').value,10);
+    const targetCompleted = parseInt(document.getElementById('target_completed').value,10)
+
+    if(targetCompleted > totalTarget){
+    
+    alert('Total target should be greater then Target completed');
+    return;
+
+    }
     event.preventDefault();
     const formData = {
         name: document.getElementById('name').value,
